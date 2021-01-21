@@ -56,12 +56,14 @@ footer a{
 }
 
 #start, #end {
-    height: 15%;
+    height: 20%;
+    padding: 0.5rem;
 }
 
 #divSize,#divDifficulty {
     width: 50%;
     justify-content: space-around;
+
 }
 
 #valid {
@@ -86,10 +88,9 @@ footer a{
 
 #end {
     justify-content: space-between;
-    padding: 0.5rem;
 }
 
-#endText{
+#endText, #start{
     font-size: 2rem;
 }
 
