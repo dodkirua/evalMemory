@@ -27,7 +27,7 @@ body {
 #container{
     width: 95%;
     height: 95%;
-
+    flex-shrink: 0;
  }
 
 footer {
@@ -91,4 +91,23 @@ footer a{
 
 #endText{
     font-size: 2rem;
+}
+
+@media screen and (max-width: 750px){
+    #end{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    #start, #divSelect{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    #divSize,#divDifficulty {
+        width: 100%;
+    }
+
 }
