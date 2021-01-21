@@ -58,16 +58,21 @@ footer a{
 #start, #end {
     height: 20%;
     padding: 0.5rem;
+    justify-content: space-between;
 }
 
 #divSize,#divDifficulty {
     width: 50%;
-    justify-content: space-around;
-
+    justify-content: space-between;
 }
 
 #valid {
     justify-content: flex-end;
+}
+
+button{
+    width: 10%;
+    font-size: 2rem;
 }
 
 .card {
@@ -86,12 +91,23 @@ footer a{
     height: 100%;
 }
 
-#end {
-    justify-content: space-between;
-}
 
 #endText, #start{
     font-size: 2rem;
+}
+
+@media screen and (max-width: 850px){
+    #start, #divSelect{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    #divSize,#divDifficulty {
+        width: 100%;
+    }
+    button {
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -103,13 +119,14 @@ footer a{
 }
 
 @media screen and (max-width: 500px){
-    #start, #divSelect{
+    #divSize,#divDifficulty {
         flex-wrap: nowrap;
         flex-direction: column;
-        width: 100%;
     }
-    #divSize,#divDifficulty {
-        width: 100%;
+    button {
+        width: 30%;
     }
-
+    #start, #end {
+        height: 25%;
+    }
 }
