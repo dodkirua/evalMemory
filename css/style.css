@@ -94,10 +94,11 @@ footer a{
 }
 
 @media screen and (max-width: 750px){
-    #end{
+    #end {
         flex-wrap: nowrap;
         flex-direction: column;
         width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px){
