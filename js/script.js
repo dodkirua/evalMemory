@@ -92,7 +92,7 @@ function endGame(){
     }
     gameArea.style.display = "none";
     end.style.display = "flex";
-    end.children[0].innerHTML = "Félicitations vous avez finis le jeux avec "+game.getNbError()+" erreur(s)."
+    end.children[0].innerHTML = "Félicitations vous avez finis le jeu avec "+game.getNbError()+" erreur(s)."
     end.children[1].addEventListener("click",function (){
         location.reload();
     })
