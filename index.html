@@ -8,9 +8,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="container">
+        <div id="start">
+            <h1>Memory</h1>
+            <div id="divSelect">
+                <div id="divDifficulty">
+                <label for="difficulty">Choisir la difficulté</label>
+                    <select name="difficulty" id="difficulty">
+                        <option value="easy">Facile</option>
+                        <option value="medium">Moyen</option>
+                        <option value="hard">Difficile</option>
+                    </select>
+                </div>
+                <div id="divSize">
+                    <label for="size">Choisir le nombre de carte</label>
+                    <select name="size" id="size">
+                        <option value="4">4</option>
+                        <option value="16">16</option>
+                        <option value="36">36</option>
+                        <option value="64">64</option>
+                    </select>
+                </div>
+            </div>
+            <div id="valid">
+                <button>Valider</button>
+            </div>
+        </div>
+        <div id="gameArea">
 
+        </div>
+        <div id="end">
+            <div id="endText"></div>
+            <button>Restart</button>
+        </div>
+    </div>
+    <footer>
+        source image <a href="https://fr.freepik.com" title="https://fr.freepik.com">freepik</a>
+    </footer>
 
-
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 </html>
