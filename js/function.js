@@ -49,8 +49,7 @@ export function find (array,elem){
 /**
  * display the picture after the click
  * @param target
- * @param listCard
- * @param dim
+ * @param game
  */
 export function replaceColorByImage(target,game){
     let tmp = target.id.substr(1);
